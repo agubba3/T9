@@ -10,4 +10,4 @@ Only matches according to the T9 dialpad are looked for in the trie and whenever
 Matches which occur lower than the given input in the trie are also considered as these do not match the given T9 input entirely but may potentially match. The given T9 input serves as a prefix to these results.
 
 A note about implementation:
-Currently in Main.java, words are inserted and more often they are, the more the user "typed" them. I did not implement the code as if a search actually inserts the word into the trie. This could easily be changed but I decided to prepopulate the trie and then search to make the results easier to see and debug. 
+iCurrently in Main.java, words are inserted multiple times (Each on a new line to show the frequency and represent the insert atomically to mimic a user typing the word once) and the more often they are, the more the user "typed" them. I did not implement the code as if a search actually inserts the word into the trie. This could easily be changed but I decided to prepopulate the trie and then search to make the results easier to see and debug. 
