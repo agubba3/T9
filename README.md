@@ -1,8 +1,8 @@
 This is a T9 Autocomplete implementation.
 
-The data structure used was a weighted trie where each node has a count, a value which is the string so far, and a flag to mark it whether it is a terminal node (a word or not).
-Trie.java works as the main class which stores all the utility functions and also serves as a class to store "Trie" objects which are basically nodes. Like said, each of these nodes has a data property, a flag, and
-a count which is the number of times this was typed or inserted.
+The data structure used was a weighted trie which consists of nodes where each has a count, a value which is the string so far, and a flag to mark whether it is a terminal node (a word or not) or not.
+Trie.java works as the main class which stores all the utility functions and also serves as a class to store "Trie" objects which are basically nodes of the trie with references to their children stored in a map. Like said, each of these nodes has a data property, a flag, and
+a count which is the number of times it's value (word)  was typed or inserted.
 
 The algorithm uses a priority queue to store all relevant matches and thus sort them by the counts. Thus, the more a word is searched for, the higher the priority it will have.
 
