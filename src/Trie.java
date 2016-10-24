@@ -190,7 +190,7 @@ public class Trie {
     /**
      * This is the helper method which actually returns the matches
      * The logic is as follows:
-     * In the trie, if a given character does not match from the sequence, that branch (all words below) is not considered - line 223
+     * In the trie, if a given character does not match from the sequence, that branch (all words below) is not considered - line 225
      * If a match exists (meaning the T-9 keyboard contains a char for the given digit from the sequence which is in the trie,
      * then we recurse downwards and keep checking if matches exist and at any point, if the algo hits a terminal node along the way or it has reached
      * the end of the sequence and a terminal node is present, we add that word to a priority queue which sorts incrementally with each add
