@@ -206,7 +206,8 @@ public class Trie {
      */
     protected PriorityQueue<Trie> allPrefixesT9(int t9Seq, int cur, boolean pastCheck) {
         PriorityQueue<Trie> results = new PriorityQueue<>(10, (Trie a, Trie b) -> b.count - a.count);
-        if (this.terminal) {
+        if (this.terminal && cur < 0) {
+            pastCheck = true;
             results.add(this);
         } else if (cur < 0) {
             pastCheck = true; //if you have reached the end of your expression and there is more to see

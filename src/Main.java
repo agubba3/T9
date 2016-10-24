@@ -31,10 +31,10 @@ public class Main {
         root.insert("delta");
         root.insert("delta");
 
-        root.insert("delt");
-        root.insert("delt");
-        root.insert("delt");
-        root.insert("delt");
+        root.insert("del");
+        root.insert("del");
+        root.insert("del");
+        root.insert("del");
 
         root.insert("fear");
         root.insert("fear");
@@ -52,6 +52,6 @@ public class Main {
         root.insert("felix");
 
         //Results are in order of priority. With lower indices = higher priority and better match.
-        System.out.println(root.autoCompleteT9(332));
+        System.out.println(root.autoCompleteT9(335));
     }
 }
